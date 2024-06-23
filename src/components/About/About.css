@@ -1,0 +1,239 @@
+.about-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 4px 2px #041122;
+  }
+  
+  .about-container h5 {
+    font-size: 2rem;
+    color: #f0f0f0;
+    margin: 4rem;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-top: 15vh;
+  }
+  
+  .about-container h5::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: #f0f0f0;
+    border-radius: 2px;
+  }
+  
+  .about-container h5:hover {
+    transform: translateY(-0.5rem);
+  }
+
+
+  .about-content{
+    display: flex;
+    width: 60%;
+    /* gap: 10%; */
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5vh;
+  }
+  
+
+  .profile-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #39f1a8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(44, 42, 42);
+  }
+  .profile-img img{
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .profile-img::after,
+.profile-img::before{
+    content: " ";
+    width: 10rem;
+    height: 10rem;
+    border-radius: 10rem;
+    background: #1d365a;
+    position: absolute;
+    z-index: -1;
+    filter: blur(100px);
+}
+
+  .profile-des{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+  }
+
+
+  .title {
+    font-size: 1.4rem;
+    color: #39f1a8;
+    font-weight: 500;
+    text-align: left;
+    letter-spacing: 0.1em;
+    transition: all 0.3s ease;
+    padding-bottom: 5px;
+    align-self: flex-start;
+  }
+  
+  .title-tag {
+    font-size: 0.8rem;
+    color: #caf0f8;
+    font-weight: 400;
+    text-align: left;
+    font-style: italic;
+    letter-spacing: 0.1em;
+    padding-bottom: 20px;
+    align-self: flex-start;
+  }
+  .story{
+    font-size: 0.8rem;
+    color: #caf0f8;
+    font-weight: 400;
+    text-align: left;
+    letter-spacing: 0.1em;
+    align-self: flex-start;
+  }
+
+  @media (max-width: 1600px){
+    .about-content{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      gap: 10%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5vh;
+    }
+    .about-container{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  .profile-img img{
+    width: 15rem;
+    height: auto;
+    border-radius: 5px;
+  }
+  .title {
+    font-size: 1rem;
+    text-align: center;
+    align-self: center;
+  }
+  
+  .title-tag {
+    font-size: 0.8rem;
+    text-align: center;
+    align-self: center;
+  }
+  .story{
+    font-size: 0.7rem;
+    text-align: center;
+    align-self: center;
+  }
+}
+
+  @media (max-width: 1300px){
+    .about-content{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      gap: 10%;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5vh;
+    }
+    .about-container{
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  .profile-img img{
+    width: 15rem;
+    height: auto;
+    border-radius: 5px;
+  }
+  .title {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .title-tag {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .story{
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 590px){
+  .about-container h5{
+    font-size: 20px;
+    margin: 15px;
+    margin-top: 100px;
+  }
+  .about-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 5vh;
+  }
+  .about-container{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .profile-des{
+    width: 18rem;
+    text-align: justify;
+    margin-bottom: 10vh;
+  }
+.profile-img img{
+  width: 15rem;
+  height: auto;
+  border-radius: 5px;
+}
+.title {
+  font-size: 1rem;
+  align-self: center;
+  text-align: center;
+  margin: 10px;
+}
+
+.title-tag {
+  font-size: 0.7rem;
+  align-self: center;
+  text-align: left;
+  font-weight: 200;
+  margin-bottom: 0;
+}
+.story{
+  font-size: 0.7rem;
+  align-self: center;
+  text-align: left;
+  font-weight: 200;
+}
+}
